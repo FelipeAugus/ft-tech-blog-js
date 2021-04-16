@@ -24,7 +24,7 @@
 //Configs
     // Sessão
         app.use(session({
-            secret: "algosecreto", //Como um pass "algosecreto"
+            secret: "algosecreto", //Como um pass 
             resave: true,
             saveUninitialized: true
         }));
