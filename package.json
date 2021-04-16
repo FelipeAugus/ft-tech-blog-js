@@ -1,0 +1,22 @@
+{
+  "name": "ft_tech_blog",
+  "version": "1.0.0",
+  "description": "Blog criado com intuito de treinar node.js ",
+  "main": "server.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3", 
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.12.2",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Felipe Augusto Souza",
+  "license": "MIT"
+}

@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
+:root{
+    --azul-claro: #758BFD; /* Azul claro botões */
+    --azul-escuro: #0E356B; /* Azul escuro fonte */
+    --preto: #3a3a3a; /* Detalhes preto */
+}
+*{font-family: Oxanium, Arial, Helvetica, sans-serif; margin: 0; padding: 0;}
+body{color: var(--preto);}
+h1, h2, h3{color: var(--azul-escuro);}
+h1{font-size: 3rem; font-weight: bold;}
+h2{font-size: 2.25rem;}
+h3{font-size: 2rem;}
+
+.main{
+    background: linear-gradient(
+                rgba(255, 255, 255, 0.9),
+                rgba(255, 255, 255, 0.9)),
+                url(../images/usb.png)fixed left bottom /600px no-repeat;
+}
+
+/* MENU */
+    /* HamburgerMenu */
+    #iconeMenu {
+        display: none;
+        cursor: pointer;
+        float: right;
+        margin: 20px 0;
+    }
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    .change .bar1 {transform: rotate(-45deg) translate(-9px, 6px);}
+    .change .bar2 {opacity: 0;}
+    .change .bar3 {transform: rotate(45deg) translate(-8px, -8px);}
+
+    /* LinksMenu*/
+    #links{
+        float: right;
+        margin: 40px 0;
+    }
+    #links-responsivo{
+        text-align: center;
+        display: none;
+        margin: 0 90px;
+    }
+    #links a, #links-responsivo a{
+        text-decoration: none;
+        color: var(--preto);
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin: 2px;
+    }
+    #links a:hover, #links-responsivo a:hover{ 
+        color: var(--azul-escuro);
+        background-color: var(--azul-claro);
+    }
+    .navLink{
+        display: block;
+    }
+
+    /* 800 px*/
+    @media screen and (max-width: 800px) {
+        #iconeMenu {
+            display: inline-block;
+        }
+        #links{
+            display: none;
+        }
+    }
+
+/*  Botões */
+button{cursor: pointer;}
+.btn{
+    border: transparent;
+    border-radius: 7px;
+    background-color: var(--azul-claro);
+    padding: 10px;
+    color: white;
+    font-size: 1rem;
+}
+.btn:hover{
+    background-color: var(--azul-escuro);
+}
+.btn-del{
+    background-color: #dc3545;
+}
+.btn-del:hover{
+    background-color: #C82333;
+}
+.btn-ok{
+    background-color: #28a745;
+}
+.btn-ok:hover{
+    background-color: #218838;
+}
+/* Alertaa */
+.alerta{
+    max-width: 100%;
+    margin: 1% 5%;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.alerta-erro{
+    background-color: #F8D7DA;
+    border: solid 1px #f5c6cb;
+    color: #721c24;
+}
+.alerta-ok{
+    background-color: #d4edda;
+    border: solid 1px #c3e6cb;
+    color: #155724;
+}
+/* seções */
+.sec{
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/* Flex */
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container div{
+    flex: 1 1 300px;
+    padding: 10px;
+    margin: 5px;
+}
+/* Formulário */
+.formulario {
+    text-align: left;
+    max-width: 800px;
+    background-color: rgba(219, 219, 219, 0.801);
+    padding: 5px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+.formulario input{
+    width: 100%;
+    height: 1.5rem;
+    font-size: 1rem;
+    margin: 3px 0;
+}
+.formulario textarea{
+    width: 100%;
+    height: 5rem;
+    font-size: 1rem;
+    margin: 3px 0;
+}
+/*Cabeçalho*/
+.header{
+    width: 100%;
+    min-height: 90px;
+    padding: 2% 0%;
+    border-bottom: solid var(--preto) 3px;
+    justify-content: space-between;
+}
+.logo{
+    width: 90px;
+    height: 90px;
+    background: url(../images/logo160.png) center center/90px no-repeat;
+    font-size: 0;
+}
+/* Home */
+#homepage{
+    width: 100%; 
+    height: 620px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)),
+        url(../images/FtTechHome.jpg) fixed center /cover no-repeat;
+}
+/* Serviços */
+.servicos-img{width: 263px; border-radius: 10px;}
+/* Quem somos */
+#quemSomos{
+    padding: 3% 1%;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.85),
+        rgba(255, 255, 255, 0.85)),
+        url(../images/quemsomos.jpg) fixed center /cover no-repeat;
+}
+.hr-quem{
+    width: 300px;
+    border-top: dashed black 2px;
+}
+/* Rodapé */
+.footer{
+    padding: 1% 0;
+    width: 100%;
+    background-color: var(--preto);
+    margin-top: 10px;
+    height: 20px;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: var(--azul-claro);
+}

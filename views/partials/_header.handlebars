@@ -1,0 +1,27 @@
+<nav> 
+  <a href="/"><div style="float: left;"><h1  class="logo">FT Tech</br>Soluções em tecnologias</h1></div></a>
+  <div id="links">    
+      <a href="/">Home</a>
+      <a href="/servicos">Serviços</a>
+      <a href="/quem">Quem Somos</a>
+      <a href="/blog">Blog</a>
+      <a href="/contatos">Contatos</a>
+      
+      {{#if user}}
+      <a href="/admin/posts">POSTS</a>
+      <a href="/user/logout">SAIR</a>
+      {{/if}}
+  </div>
+  {{>_menuIcon}} 
+  <div id="links-responsivo">
+      <a href="/" class="navLink">Home</a>
+      <a href="/servicos" class="navLink">Serviços</a>
+      <a href="/quem" class="navLink">Quem Somos</a>
+      <a href="/blog" class="navLink">Blog</a>
+      <a href="/contatos" class="navLink">Contatos</a>
+      {{#if user}}
+      <a href="/admin/posts" class="navLink">POSTS</a>
+      <a href="/user/logout" class="navLink">SAIR</a>
+      {{/if}}
+  </div>
+</nav>

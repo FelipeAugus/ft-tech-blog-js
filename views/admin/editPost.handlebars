@@ -1,0 +1,15 @@
+<div class="sec"><h1>Editar Post</h1></div>
+{{#each erros}}
+    <div class="alerta alerta-erro">{{desc}}</div>
+{{/each}}
+<section class="sec"  style="padding-bottom: 15%;">
+        <form action="/admin/posts/edit" method="post" class="formulario">
+            <input type="hidden" name="id" value="{{post._id}}">
+            <label for="titulo">Título: </label>
+                <input type="text" id="titulo" name="titulo" value="{{post.titulo}}">
+            <label for="texto">Post: </label>
+                <textarea name="texto" id="texto" rows="5">{{post.texto}}</textarea>
+            <br>
+            <button type="submit" class="btn btn-success">Editar Post</button>
+        </form> 
+</section>

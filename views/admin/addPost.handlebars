@@ -1,0 +1,14 @@
+<div class="sec"><h1>Novo Post</h1></div>
+{{#each erros}}
+    <div class="alerta alerta-erro">{{desc}}</div>
+{{/each}}
+<section class="sec"  style="padding-bottom: 15%;">
+        <form action="/admin/posts/add" method="post" class="formulario">
+            <label for="titulo">Título: </label>
+                <input type="text" id="titulo" name="titulo" placeholder="Título do Post">
+            <label for="texto">Post: </label>
+                <textarea name="texto" id="texto" rows="5" placeholder="Post"></textarea>
+            <br>
+            <button type="submit" class="btn btn-ok">Criar Post</button>
+        </form> 
+</section>

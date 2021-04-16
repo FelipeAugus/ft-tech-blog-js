@@ -1,0 +1,17 @@
+<div class="sec"><h2>Cadastrar Admin</h2></div>
+{{#each erros}}
+    <div class="alerta alerta-erro">{{desc}}</div>
+{{/each}}
+<section class="sec" style="padding-bottom: 15%;">
+        <form action="/user/cadastro" method="post" class="formulario">
+            <label for="nome">Nome: </label>
+                <input type="text" name="nome" required>
+            <label for="email">E-mail: </label>
+                <input type="email" name="email" required>
+            <label for="senha">Senha: </label>
+                <input type="password" name="senha" required>
+            <label for="senha2">Confirme sua senha: </label>
+                <input type="password" name="senha2" required>
+            <button type="submit" class="btn" style=" margin: 5px;">Cadastrar</button>
+        </form>
+</section>

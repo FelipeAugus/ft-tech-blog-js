@@ -1,0 +1,15 @@
+<div class="sec"><h2>Postagens recentes: </h2></div>
+<div style="min-height: 60vh;">
+<section class="container">
+    <br>
+{{#each posts}} 
+    <div style="border: dashed #3a3a3a;">
+        <h3>{{titulo}}</h3>
+        <a href="/post/{{_id}}"><button class="btn">Ler mais</button></a>
+    </div>
+{{else}}
+    <div class="sec"><h3>Nenhuma postagem ainda</h3></div>
+    <br>
+{{/each}}
+</section>
+</div>

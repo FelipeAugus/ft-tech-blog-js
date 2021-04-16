@@ -1,0 +1,13 @@
+<div class="sec"><h2>Login: </h2></div>
+{{#if error}}
+    <div class="alerta alerta-erro">{{error}}</div>
+{{/if}}
+<section class="sec" style="padding-bottom: 20%;">
+    <form action="/user/login" method="post" class="formulario">
+        <label for="email">E-mail: </label>
+            <input type="email" name="email" required>
+        <label for="senha">Senha: </label>
+            <input type="password" name="senha" required>
+        <button type="submit" class="btn" style="margin-top: 5px;">Entrar</button>
+    </form>
+</section>

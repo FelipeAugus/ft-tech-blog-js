@@ -1,0 +1,23 @@
+<div class="sec"><h2>Lista de Posts</h2></div>
+<div class="sec" style="text-align: left;"><a href="/admin/posts/add"><button class="btn btn-ok">Novo Post</button></a></div>
+<br>
+<div style="min-height: 52vh;">
+<section class="container"  style="padding-bottom: 15%;">
+{{#each posts}}
+        <div style="border: dashed #3a3a3a; background-color: white;">
+            <small>{{date}}</small><br>
+            <div>
+                <a  href="/admin/posts/edit/{{_id}}"><button class="btn">Editar</button></a>
+                <form action="/admin/posts/drop" method="post" style="float: right;">
+                    <input type="hidden" name="id" value="{{_id}}">
+                    <button class="btn btn-del">Deletar</button>
+                </form>
+            </div>
+            <h3>{{titulo}}</h3>
+        </div>
+{{else}}
+    <div class="sec"><h3>Nenhum post realizado</h3></div>
+    <br>
+{{/each}}
+</section>
+</div>
