@@ -27,13 +27,18 @@ class AdminController{
         if(!req.body.texto.trim() || typeof(req.body.texto) == undefined || req.body.texto == null){
             erros.push({desc: "Post inválido !"});
         }
+        if(!req.body.preTexto.trim() || typeof(req.body.preTexto) == undefined || req.body.preTexto == null){
+            erros.push({desc: "Pré View inválido !"});
+        }
     
         if(erros.length > 0){ // Ocorreu algum erro
             res.render("admin/addPost", {titulo: 'ERROR - NewPost', erros: erros});
         }else{
             const novoPost = {
                 titulo: req.body.titulo,
+                preTexto: req.body.preTexto,
                 texto: req.body.texto,
+                imagem: req.body.imagem,
             }
     
             new Post(novoPost).save()
@@ -64,6 +69,9 @@ class AdminController{
         if(!req.body.texto.trim() || typeof(req.body.texto) == undefined || req.body.texto == null){
             erros.push({desc: "Post inválido !"});
         }
+        if(!req.body.preTexto.trim() || typeof(req.body.preTexto) == undefined || req.body.preTexto == null){
+            erros.push({desc: "Pré View inválido !"});
+        }
     
         if(erros.length > 0){ // Ocorreu algum erro
             Post.findOne({_id: req.body.id}).lean()
@@ -76,6 +84,8 @@ class AdminController{
     
                 post.titulo = req.body.titulo;
                 post.texto = req.body.texto;
+                post.preTexto = req.body.preTexto;
+                post.imagem = req.body.imagem;
     
                 post.save()
                 .then(()=>{

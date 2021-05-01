@@ -40,8 +40,8 @@
             next();
         });
     // Parsing 
-        app.use(express.urlencoded({extended: true}));
-        app.use(express.json())
+        app.use(express.urlencoded({limit: '1mb', extended: true}));
+        app.use(express.json({limit: '1mb'}))
     // Handlebars
         app.engine('handlebars', handlebars({defaultLayout: 'main'}));
         app.set('view engine', 'handlebars');

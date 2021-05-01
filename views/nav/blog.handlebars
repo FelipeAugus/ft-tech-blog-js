@@ -5,6 +5,8 @@
 {{#each posts}} 
     <div style="border: dashed #3a3a3a;">
         <h3>{{titulo}}</h3>
+        <p>{{preTexto}}</p>
+        <img src="{{imagem}}" style="float: right; width: 100px; height: 100px;">
         <a href="/post/{{_id}}"><button class="btn">Ler mais</button></a>
     </div>
 {{else}}

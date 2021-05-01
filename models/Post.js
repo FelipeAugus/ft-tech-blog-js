@@ -6,7 +6,15 @@ const Post = new Schema({
         type: String,
         require: true,
     },
+    preTexto: {
+        type: String,
+        require: true,
+    },
     texto: {
+        type: String,
+        require: true,
+    },
+    imagem: {
         type: String,
         require: true,
     },
