@@ -6,7 +6,7 @@
 Site de uma empresa com seção de blog 📃💻
 
 🌐 Online em:
-https://fttech.herokuapp.com
+https://fttech.fly.dev/
 
 ## Pré-requisitos
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
