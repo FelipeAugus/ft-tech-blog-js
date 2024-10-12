@@ -23,11 +23,11 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <a href="#"><p>
  <img src="https://img.shields.io/badge/2.4.3-bcryptjs-green">
  <img src="https://img.shields.io/badge/0.1.1-connect_flash-green">
- <img src="https://img.shields.io/badge/4.17.1-express-green">
- <img src="https://img.shields.io/badge/5.2.1-express_handlebars-green">
- <img src="https://img.shields.io/badge/1.17.1-express_session-green">
- <img src="https://img.shields.io/badge/5.12.2-mongoose-green">
- <img src="https://img.shields.io/badge/0.4.1-passport-green">
+ <img src="https://img.shields.io/badge/4.21.1-express-green">
+ <img src="https://img.shields.io/badge/5.3.1-express_handlebars-green">
+ <img src="https://img.shields.io/badge/1.18.1-express_session-green">
+ <img src="https://img.shields.io/badge/8.7.1-mongoose-green">
+ <img src="https://img.shields.io/badge/0.6.0-passport-green">
  <img src="https://img.shields.io/badge/1.0.0-passport_local-green">
 </p></a>
 
